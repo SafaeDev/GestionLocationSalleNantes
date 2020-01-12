@@ -21,6 +21,18 @@ public class Salle {
 	private String adresse;
 	
 	
+	public Salle(long codeSalle, String nom, int capaciteAssise, int capaciteDebout, String numeroTelephone,
+			boolean occupation, Date heureOuverture, String adresse) {
+		super();
+		this.codeSalle = codeSalle;
+		this.nom = nom;
+		this.capaciteAssise = capaciteAssise;
+		this.capaciteDebout = capaciteDebout;
+		this.numeroTelephone = numeroTelephone;
+		this.occupation = occupation;
+		this.heureOuverture = heureOuverture;
+		this.adresse = adresse;
+	}
 	/**
 	 * @return the codeSalle
 	 */
@@ -116,6 +128,12 @@ public class Salle {
 	 */
 	public void setAdresse(String adresse) {
 		this.adresse = adresse;
+	}
+	@Override
+	public String toString() {
+		return "Salle [nom=" + nom + ", capaciteAssise=" + capaciteAssise + ", capaciteDebout=" + capaciteDebout
+				+ ", numeroTelephone=" + numeroTelephone + ", occupation=" + occupation + ", heureOuverture="
+				+ heureOuverture + ", adresse=" + adresse + "]";
 	}
 	 
 	
